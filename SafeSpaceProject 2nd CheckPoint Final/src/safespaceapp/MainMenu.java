@@ -4,7 +4,9 @@
  */
 package safespaceapp;
 
+import paygap.EmployeeGUI;
 import reporter.ReportForm;
+import resources.resourcefindermenu;
 
 /**
  *
@@ -34,7 +36,7 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         reporterBtn = new javax.swing.JButton();
         resourceBtn = new javax.swing.JButton();
-        eventsBtn = new javax.swing.JButton();
+        payGapBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -49,8 +51,9 @@ public class MainMenu extends javax.swing.JFrame {
         resourceBtn.setText("Support Resources");
         resourceBtn.addActionListener(this::resourceBtnActionPerformed);
 
-        eventsBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
-        eventsBtn.setText("Events & Volunteering");
+        payGapBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        payGapBtn.setText("Gender Pay Gap");
+        payGapBtn.addActionListener(this::payGapBtnActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -61,7 +64,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(reporterBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(resourceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(eventsBtn))
+                    .addComponent(payGapBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(180, 180, 180))
             .addGroup(layout.createSequentialGroup()
                 .addGap(251, 251, 251)
@@ -78,7 +81,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addGap(47, 47, 47)
                 .addComponent(resourceBtn)
                 .addGap(50, 50, 50)
-                .addComponent(eventsBtn)
+                .addComponent(payGapBtn)
                 .addContainerGap(84, Short.MAX_VALUE))
         );
 
@@ -92,8 +95,14 @@ public class MainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_reporterBtnActionPerformed
 
     private void resourceBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resourceBtnActionPerformed
-        // TODO add your handling code here:
+        new resourcefindermenu().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_resourceBtnActionPerformed
+
+    private void payGapBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payGapBtnActionPerformed
+        new EmployeeGUI().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_payGapBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -121,7 +130,7 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton eventsBtn;
+    private javax.swing.JButton payGapBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton reporterBtn;
     private javax.swing.JButton resourceBtn;

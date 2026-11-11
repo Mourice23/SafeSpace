@@ -28,7 +28,7 @@
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="reporterBtn" min="-2" pref="266" max="-2" attributes="0"/>
                   <Component id="resourceBtn" min="-2" pref="266" max="-2" attributes="0"/>
-                  <Component id="eventsBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="payGapBtn" min="-2" pref="266" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
           </Group>
@@ -49,7 +49,7 @@
               <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
               <Component id="resourceBtn" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-              <Component id="eventsBtn" min="-2" max="-2" attributes="0"/>
+              <Component id="payGapBtn" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="84" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -86,13 +86,16 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="resourceBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="eventsBtn">
+    <Component class="javax.swing.JButton" name="payGapBtn">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Helvetica Neue" size="24" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Events &amp; Volunteering"/>
+        <Property name="text" type="java.lang.String" value="Gender Pay Gap"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="payGapBtnActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
