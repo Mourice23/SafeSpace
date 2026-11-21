@@ -1,9 +1,7 @@
 package reporter;
-
-/**
- * Parent class for all incident reports.
- * Author: MOffor
- */
+//parent class for incident reports
+ //* Author: MouriceOffor
+ 
 public class Report {
 
     private int reportId;
@@ -37,6 +35,6 @@ public class Report {
     }
 
     public String toFileString() {
-        return reportId + "," + type + "," + location + "," + date + "," + description;
+        return reportId + "|" + type + "|" + location + "|" + date + "|" + description;
     }
 }
