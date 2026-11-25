@@ -1,7 +1,7 @@
 package reporter;
 
 /**
- * A report of an incident at school. Extends Report (inheritance).
+ * A report report of a an incident in school extends report inheritance 
  * Author: MouriceOffor
  */
 public class SchoolReport extends Report {
@@ -28,6 +28,6 @@ public class SchoolReport extends Report {
 
     @Override
     public String toFileString() {
-        return super.toFileString() + "," + schoolName + "," + yearGroup;
+        return super.toFileString() + "|" + schoolName + "|" + yearGroup;
     }
 }
