@@ -3,10 +3,10 @@ package reporter;
 import java.util.ArrayList;
 
 /**
- * holds all reports in a arraylist and implements saveable
+ * holds all reports in a array list and implements saveable
  * Checkpoint 2 UI only
  *
- * Author: Mouriceofor
+ * Author: Mouriceoffor
  */
 public class ReportManager implements Saveable {
 
